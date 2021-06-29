@@ -14,9 +14,11 @@
             <div class="fruitbox-item fruitbox-item-1">
                 <h3>Apples</h3>
                 <img src="images/apples.png" width="175" height="175" alt="picture of apples">
-                <p>£2.50 for 5</p>
-                <form>
-                    <input type="button" onclick="to_cart('apples')" value="Add to cart">
+                <p>£0.50 each</p>
+                <form onsubmit="to_cart()">
+                    <label for="quantity">quantity:</label>
+                    <input type="text" id="apple_quantity" name="apple_quantity">
+                    <input type="submit" value="ok">
                 </form>
             </div>
             <div class="fruitbox-item fruitbox-item-2">
@@ -31,7 +33,7 @@
                 <h3>Kiwis</h3>
                 <img src="images/kiwi.png" width="175" height="175" alt="picture of a kiwi">
                 <p>£4 for 5</p>
-                <form> 
+                <form>
                     <input type="button" onclick="to_cart('kiwi')" value="Add to cart">
                 </form>
             </div>
